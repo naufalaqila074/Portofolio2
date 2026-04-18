@@ -66,33 +66,36 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    position: "Nama Posisi",
-    company: "Nama Perusahaan",
-    period: "Jan 2024 - Sekarang",
-    type: "Work",
+    position: "Water Resources Engineering Intern, Cibeet Dam Project 1",
+    company: "PT. Nindya Karya, PT. Adhi Karya, PT Bahagiabangunnusa, KSO",
+    period: "Jul 2025 - Dec 2025",
+    type: "Internship",
     description: [
-      "Deskripsi tanggung jawab dan pencapaian akan diisi di sini.",
-      "Tambahkan poin-poin penting tentang peran Anda.",
+      "Executed dam breach modeling and geotechnical analysis for the main dam to assess structural safety and potential failure scenarios using Geostudio and Plaxis",
+      "Calculated and evaluated cost estimates for ongoing construction progress to ensure accurate project budgeting",
+      "Simulated and modeled the main dam's inundation area to analyze water capacity, spatial impact, and environmental considerations using HEC-RAS and ArcGis Pro",
     ],
   },
   {
-    position: "Nama Posisi Intern",
-    company: "Nama Perusahaan",
-    period: "Jun 2023 - Des 2023",
+    position: "Surveyor and Planner, Madura Irrigation Area Investigation Project",
+    company: "Department of Public Works and Water Resources (PUSDA) East Java",
+    period: "May 2025 - Jun 2025",
     type: "Internship",
     description: [
-      "Deskripsi tanggung jawab dan pencapaian akan diisi di sini.",
-      "Tambahkan poin-poin penting tentang peran Anda.",
+      "Conducted comprehensive field surveys and analyzed land conditions for over 1,000 hectares of irrigation areas across Pamekasan and Sumenep Regencies",
+      "Developed strategic land optimization plans for the irrigation network to enhance agricultural productivity and water distribution efficiency",
+      "Prepared detailed cost estimations and budget planning for the proposed land optimization strategies",
     ],
   },
   {
-    position: "Nama Posisi Intern",
-    company: "Nama Perusahaan",
-    period: "Jan 2023 - Mei 2023",
+    position: "Civil Engineering Intern",
+    company: "Department of Urban Works and Spatial Planning (PUTR) Gresik",
+    period: "Jul 2024 - Aug 2024",
     type: "Internship",
     description: [
-      "Deskripsi tanggung jawab dan pencapaian akan diisi di sini.",
-      "Tambahkan poin-poin penting tentang peran Anda.",
+      "Collected spatial data and mapped 156 retention basins (embung) across the Gresik region utilizing ArcGIS software",
+      "Calculated and prepared the Bill of Quantities (BOQ) for the construction and maintenance of water gates",
+      "Conducted field measurements and topographic mapping along the Lamong River to support flood mitigation and river normalization projects",
     ],
   },
 ];
