@@ -8,8 +8,8 @@ import { profile } from "@/lib/data";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Training", href: "#training" },
   { label: "Experience", href: "#experience" },
+  { label: "Training", href: "#training" },
   { label: "Organizations", href: "#organizations" },
 ];
 

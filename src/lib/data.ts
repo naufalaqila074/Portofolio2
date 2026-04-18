@@ -60,7 +60,7 @@ export interface Experience {
   position: string;
   company: string;
   period: string;
-  type: "Work" | "Internship";
+  type: "Work" | "Internship" | "Irrigation Project";
   description: string[];
 }
 
@@ -80,7 +80,7 @@ export const experiences: Experience[] = [
     position: "Surveyor and Planner, Madura Irrigation Area Investigation Project",
     company: "Department of Public Works and Water Resources (PUSDA) East Java",
     period: "May 2025 - Jun 2025",
-    type: "Internship",
+    type: "Irrigation Project",
     description: [
       "Conducted comprehensive field surveys and analyzed land conditions for over 1,000 hectares of irrigation areas across Pamekasan and Sumenep Regencies",
       "Developed strategic land optimization plans for the irrigation network to enhance agricultural productivity and water distribution efficiency",
