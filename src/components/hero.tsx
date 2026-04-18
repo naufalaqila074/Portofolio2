@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function Hero() {
   const handleScrollDown = () => {
-    const el = document.querySelector("#tentang");
+    const el = document.querySelector("#about");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -37,7 +37,7 @@ export function Hero() {
               alt={profile.name}
               width={128}
               height={128}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[center_20%]"
               priority
             />
           ) : (

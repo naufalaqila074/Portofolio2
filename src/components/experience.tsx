@@ -10,7 +10,7 @@ export function Experience() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="pengalaman" className="py-24 sm:py-32">
+    <section id="experience" className="py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6">
         <motion.div
           ref={ref}
@@ -21,10 +21,10 @@ export function Experience() {
           {/* Section header */}
           <div className="mb-14 text-center">
             <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">
-              Pengalaman
+              Experience
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-white">
-              Kerja & Internship
+              Work & Internship
             </h2>
             <div className="mt-4 w-16 h-1 bg-blue-600 dark:bg-blue-400 rounded-full mx-auto" />
           </div>
@@ -64,12 +64,12 @@ export function Experience() {
                       <div className="flex items-center gap-2 mb-3">
                         <span
                           className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${
-                            exp.type === "Kerja"
+                            exp.type === "Work"
                               ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300"
                               : "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300"
                           }`}
                         >
-                          {exp.type === "Kerja" ? (
+                          {exp.type === "Work" ? (
                             <Briefcase size={12} />
                           ) : (
                             <GraduationCap size={12} />

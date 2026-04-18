@@ -7,10 +7,10 @@ import { cn } from "@/lib/utils";
 import { profile } from "@/lib/data";
 
 const navLinks = [
-  { label: "Tentang", href: "#tentang" },
-  { label: "Pelatihan", href: "#pelatihan" },
-  { label: "Pengalaman", href: "#pengalaman" },
-  { label: "Organisasi", href: "#organisasi" },
+  { label: "About", href: "#about" },
+  { label: "Training", href: "#training" },
+  { label: "Experience", href: "#experience" },
+  { label: "Organizations", href: "#organizations" },
 ];
 
 export function Navbar() {

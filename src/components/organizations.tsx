@@ -11,7 +11,7 @@ export function Organizations() {
 
   return (
     <section
-      id="organisasi"
+      id="organizations"
       className="py-24 sm:py-32 bg-zinc-50/50 dark:bg-zinc-900/30"
     >
       <div className="mx-auto max-w-4xl px-6">
@@ -24,10 +24,10 @@ export function Organizations() {
           {/* Section header */}
           <div className="mb-14 text-center">
             <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">
-              Organisasi
+              Organizations
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-white">
-              Pengalaman Organisasi
+              Organizational Experience
             </h2>
             <div className="mt-4 w-16 h-1 bg-blue-600 dark:bg-blue-400 rounded-full mx-auto" />
           </div>

@@ -23,7 +23,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-sm font-semibold text-zinc-900 dark:text-white uppercase tracking-wider mb-4">
-              Kontak
+              Contact
             </h4>
             <ul className="space-y-3">
               <li>
@@ -56,7 +56,7 @@ export function Footer() {
           {/* Social */}
           <div>
             <h4 className="text-sm font-semibold text-zinc-900 dark:text-white uppercase tracking-wider mb-4">
-              Sosial Media
+              Social Media
             </h4>
             <div className="flex gap-3">
               <a
@@ -93,8 +93,8 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-zinc-200 dark:border-zinc-800 text-center">
           <p className="text-xs text-zinc-500 dark:text-zinc-600">
-            &copy; {new Date().getFullYear()} {profile.name}. Semua hak
-            dilindungi.
+            &copy; {new Date().getFullYear()} {profile.name}. All rights
+            reserved.
           </p>
         </div>
       </div>

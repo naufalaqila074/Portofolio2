@@ -11,7 +11,7 @@ export function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="tentang" className="py-24 sm:py-32">
+    <section id="about" className="py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6">
         <motion.div
           ref={ref}
@@ -22,10 +22,10 @@ export function About() {
           {/* Section header */}
           <div className="mb-12">
             <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">
-              Tentang Saya
+              About Me
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-white">
-              Siapa Saya?
+              Who Am I?
             </h2>
             <div className="mt-4 w-16 h-1 bg-blue-600 dark:bg-blue-400 rounded-full" />
           </div>
@@ -59,7 +59,7 @@ export function About() {
                           .join("")
                           .slice(0, 2)}
                       </div>
-                      <p className="text-xs">Tambahkan foto Anda</p>
+                      <p className="text-xs">Add your photo</p>
                     </div>
                   </div>
                 )}
@@ -94,7 +94,7 @@ export function About() {
                 </div>
                 <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700/50">
                   <p className="text-xs text-zinc-500 dark:text-zinc-500 uppercase tracking-wider mb-1">
-                    Lokasi
+                    Location
                   </p>
                   <p className="text-sm font-medium text-zinc-900 dark:text-white">
                     {profile.location}

@@ -3,17 +3,17 @@
 // ============================================================
 
 export const profile = {
-  name: "Muhammad Naufal Aqila",
-  title: "Civil Engineer",
-  tagline: "Membangun Masa Depan dengan Fondasi yang Kuat",
-  avatar: "/profile.jpg", // Foto profil
+  name: "Muhammad Naufal 'Aqila",
+  title: "Civil Infrastructure Engineering Student",
+  tagline: "Building Tomorrow's Infrastructure with Innovation",
+  avatar: "/profile.jpg",
   bio: [
-    "Saya adalah seorang Civil Engineer yang berdedikasi dalam merancang dan membangun infrastruktur yang berkelanjutan. Dengan latar belakang pendidikan di bidang Teknik Sipil, saya memiliki passion dalam menciptakan solusi struktural yang inovatif dan efisien.",
-    "Pengalaman saya mencakup berbagai proyek konstruksi, mulai dari perencanaan hingga pelaksanaan. Saya percaya bahwa setiap struktur yang dibangun harus memenuhi standar keamanan tertinggi sekaligus memberikan nilai estetika dan fungsional.",
+    "Civil Infrastructure Engineering student from Institut Teknologi Sepuluh Nopember with a strong interest in water resources and structural engineering. Demonstrated leadership through various academic and organizational roles.",
+    "Experienced in hydraulic modeling, GIS analysis, Geotechnical modeling, and infrastructure project planning, including river mapping and water structure cost estimation. Possesses hands-on experience using engineering software such as HEC-RAS, ArcGis Pro, AutoCAD Civil 3D, Plaxis and Geostudio.",
   ],
-  email: "naufal@example.com",
-  phone: "+62 812-xxxx-xxxx",
-  location: "Indonesia",
+  email: "naufalaqila732@gmail.com",
+  phone: "+6287816649287",
+  location: "Gresik, East Java, Indonesia",
   social: {
     linkedin: "https://linkedin.com/in/username",
     instagram: "https://instagram.com/username",
@@ -60,7 +60,7 @@ export interface Experience {
   position: string;
   company: string;
   period: string;
-  type: "Kerja" | "Internship";
+  type: "Work" | "Internship";
   description: string[];
 }
 
@@ -69,7 +69,7 @@ export const experiences: Experience[] = [
     position: "Nama Posisi",
     company: "Nama Perusahaan",
     period: "Jan 2024 - Sekarang",
-    type: "Kerja",
+    type: "Work",
     description: [
       "Deskripsi tanggung jawab dan pencapaian akan diisi di sini.",
       "Tambahkan poin-poin penting tentang peran Anda.",
