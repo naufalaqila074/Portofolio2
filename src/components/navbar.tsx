@@ -52,7 +52,7 @@ export function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="text-lg font-bold tracking-tight text-zinc-900 dark:text-white hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
         >
-          {profile.name.split(" ")[0]}
+          {"Naufal 'Aqila"}
           <span className="text-blue-600 dark:text-blue-400">.</span>
         </button>
 

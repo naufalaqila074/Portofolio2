@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, MapPin } from "lucide-react";
+import { ArrowDown, FileDown, MapPin } from "lucide-react";
 import { profile } from "@/lib/data";
 import Image from "next/image";
 
@@ -76,14 +76,16 @@ export function Hero() {
         </motion.div>
 
         {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed"
-        >
-          {profile.tagline}
-        </motion.p>
+        {profile.tagline && (
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed"
+          >
+            {profile.tagline}
+          </motion.p>
+        )}
 
         {/* Location */}
         <motion.div
@@ -97,16 +99,29 @@ export function Hero() {
         </motion.div>
 
         {/* CTA */}
-        <motion.button
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          onClick={handleScrollDown}
-          className="mt-10 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors shadow-lg"
+          className="mt-10 flex items-center justify-center gap-4"
         >
-          Kenali Saya Lebih Lanjut
-          <ArrowDown size={16} className="animate-bounce" />
-        </motion.button>
+          <button
+            onClick={handleScrollDown}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors shadow-lg"
+          >
+            Get to Know Me
+            <ArrowDown size={16} className="animate-bounce" />
+          </button>
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white text-sm font-medium hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-colors"
+          >
+            Download CV
+            <FileDown size={16} />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

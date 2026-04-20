@@ -5,7 +5,7 @@
 export const profile = {
   name: "Muhammad Naufal 'Aqila",
   title: "Civil Infrastructure Engineering Student",
-  tagline: "Building Tomorrow's Infrastructure with Innovation",
+  tagline: "",
   avatar: "/profile.jpg",
   bio: [
     "Civil Infrastructure Engineering student from Institut Teknologi Sepuluh Nopember with a strong interest in water resources and structural engineering. Demonstrated leadership through various academic and organizational roles.",
