@@ -73,6 +73,11 @@ export function About() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="space-y-5"
             >
+              {/* Intro heading */}
+              <h3 className="text-2xl sm:text-3xl font-bold leading-snug text-zinc-900 dark:text-white">
+                {profile.aboutHeading}
+              </h3>
+
               {profile.bio.map((paragraph, i) => (
                 <p
                   key={i}

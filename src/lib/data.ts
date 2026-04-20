@@ -7,8 +7,10 @@ export const profile = {
   title: "Civil Infrastructure Engineering Student",
   tagline: "",
   avatar: "/profile.jpg",
+  aboutHeading:
+    "I'm Naufal 'Aqila, a Civil Infrastructure Engineering student from Sepuluh Nopember Institute of Technology with a strong interest in water resources and structural engineering.",
   bio: [
-    "Civil Infrastructure Engineering student from Institut Teknologi Sepuluh Nopember with a strong interest in water resources and structural engineering. Demonstrated leadership through various academic and organizational roles.",
+    "Demonstrated leadership through various academic and organizational roles.",
     "Experienced in hydraulic modeling, GIS analysis, Geotechnical modeling, and infrastructure project planning, including river mapping and water structure cost estimation. Possesses hands-on experience using engineering software such as HEC-RAS, ArcGis Pro, AutoCAD Civil 3D, Plaxis and Geostudio.",
   ],
   email: "naufalaqila732@gmail.com",
