@@ -20,6 +20,20 @@ export const profile = {
     instagram: "https://www.instagram.com/naufallaqila?igsh=Ym1mY2FwdWV0a29k&utm_source=qr",
     github: "",
   },
+  technicalSkills: [
+    "Microsoft Office",
+    "Google Workspace",
+    "HEC-RAS",
+    "HEC-HMS",
+    "AutoCAD Civil 3D",
+    "ArcGIS Pro",
+    "Geostudio",
+    "Plaxis",
+  ],
+  languages: [
+    { name: "Bahasa Indonesia", level: "Native" },
+    { name: "English", level: "CEFR B2 Upper-Intermediate, Score: 408 - British Council EnglishScore" },
+  ],
 };
 
 export interface Training {

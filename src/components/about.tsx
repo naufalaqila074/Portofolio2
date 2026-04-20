@@ -106,6 +106,45 @@ export function About() {
                   </p>
                 </div>
               </div>
+
+              {/* Technical Skills */}
+              <div className="pt-4">
+                <p className="text-xs text-zinc-500 dark:text-zinc-500 uppercase tracking-wider mb-3">
+                  Technical Skills
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {profile.technicalSkills.map((skill, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1.5 text-xs font-medium rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Languages */}
+              <div className="pt-2">
+                <p className="text-xs text-zinc-500 dark:text-zinc-500 uppercase tracking-wider mb-3">
+                  Languages
+                </p>
+                <div className="space-y-2">
+                  {profile.languages.map((lang, i) => (
+                    <div
+                      key={i}
+                      className="flex items-baseline gap-2 text-sm"
+                    >
+                      <span className="font-medium text-zinc-900 dark:text-white">
+                        {lang.name}
+                      </span>
+                      <span className="text-zinc-500 dark:text-zinc-400">
+                        &mdash; {lang.level}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </motion.div>
           </div>
         </motion.div>
