@@ -31,28 +31,76 @@ export interface Training {
 
 export const trainings: Training[] = [
   {
-    title: "Pelatihan Perencanaan Struktur Beton",
-    organizer: "Nama Penyelenggara",
-    year: "2024",
+    title: "River Engineering for Mining: Principles, River Morphology, Hydrological and Hydraulic Modelling",
+    organizer: "Sesi Minerba Indonesia",
+    year: "2026",
     description:
-      "Deskripsi pelatihan akan diisi di sini. Jelaskan apa yang dipelajari dan kompetensi yang didapat.",
-    category: "Struktural",
+      "Training on river engineering principles, river morphology, and hydrological & hydraulic modelling for mining applications. 28 - 29 March 2026.",
+    category: "Hydraulic",
   },
   {
-    title: "Workshop Analisis Geoteknik",
-    organizer: "Nama Penyelenggara",
-    year: "2023",
+    title: "Belajar Pemodelan Banjir dengan HEC-RAS",
+    organizer: "PT. Arta Survey Technology",
+    year: "2025",
     description:
-      "Deskripsi pelatihan akan diisi di sini. Jelaskan apa yang dipelajari dan kompetensi yang didapat.",
-    category: "Geoteknik",
+      "Training on flood modeling using HEC-RAS software. 30 November 2025.",
+    category: "Hydraulic",
   },
   {
-    title: "Sertifikasi Manajemen Proyek Konstruksi",
-    organizer: "Nama Penyelenggara",
-    year: "2023",
+    title: "MASTERCLASS GIS FOR MINING: Advanced GIS for Topographic, Hydrological, and Environmental Applications Using ArcGIS Pro",
+    organizer: "Takeclass",
+    year: "2025",
     description:
-      "Deskripsi pelatihan akan diisi di sini. Jelaskan apa yang dipelajari dan kompetensi yang didapat.",
-    category: "Manajemen",
+      "Advanced GIS masterclass covering topographic, hydrological, and environmental applications using ArcGIS Pro for mining. 16 October - 07 November 2025.",
+    category: "GIS",
+  },
+  {
+    title: "Hidrologi Tambang: Strategi Efektif Pengelolaan Air pada Tambang Batu Bara",
+    organizer: "Sesi Minerba Indonesia",
+    year: "2025",
+    description:
+      "Training on effective water management strategies for coal mining hydrology. 26 October 2025.",
+    category: "Hydraulic",
+  },
+  {
+    title: "Kajian Penanganan Longsoran dan Rembesan di Hilir Bendungan dengan Metode Analisa Balik menggunakan Software Geostudio Sesuai SNI 8460-2017",
+    organizer: "Kursus Sipil Indonesia",
+    year: "2025",
+    description:
+      "Study on landslide and seepage handling downstream of dams using back analysis method with Geostudio software according to SNI 8460-2017. 21 October 2025.",
+    category: "Geotechnical",
+  },
+  {
+    title: "Intensive Bootcamp: Pengolahan Data dan Quality Control Data GNSS Statik & RTK dari Dasar Untuk Survey dan Pemetaan",
+    organizer: "Aksara Lab Indonesia",
+    year: "2025",
+    description:
+      "Intensive bootcamp on GNSS Static & RTK data processing and quality control for surveying and mapping. 05 - 06 August 2025.",
+    category: "Survey",
+  },
+  {
+    title: "Sesi Training Software Slide 2 Pemodelan Stabilitas Geoteknik Terapan untuk Tambang Nikel",
+    organizer: "Sesi Minerba Indonesia",
+    year: "2025",
+    description:
+      "Training on Slide 2 software for applied geotechnical stability modeling for nickel mining. 21 June 2025.",
+    category: "Geotechnical",
+  },
+  {
+    title: "Pelatihan Delft3D-FLOW dan Delft3D-WAVE",
+    organizer: "Ahli Sains dan Data Analisis (SDA)",
+    year: "2025",
+    description:
+      "Training on Delft3D-FLOW and Delft3D-WAVE hydrodynamic modeling software. 24 - 25 May 2025.",
+    category: "Hydraulic",
+  },
+  {
+    title: "Exclusive Geotechnical Training Study Case 1-4 Using Plaxis 2D",
+    organizer: "KursusSipil",
+    year: "2025",
+    description:
+      "Exclusive geotechnical training with 4 study cases using Plaxis 2D software. 19 - 20 April 2025.",
+    category: "Geotechnical",
   },
 ];
 
@@ -104,30 +152,54 @@ export interface Organization {
   name: string;
   position: string;
   period: string;
-  description: string;
+  description: string[];
 }
 
 export const organizations: Organization[] = [
   {
-    name: "Nama Organisasi",
-    position: "Nama Jabatan",
-    period: "2023 - 2024",
-    description:
-      "Deskripsi peran dan kontribusi Anda di organisasi ini akan diisi di sini.",
+    name: "Civil Infrastructure Engineering Batch 2022",
+    position: "Vice Chairman",
+    period: "Aug 2022 - Sep 2026",
+    description: [
+      "Provided strategic leadership and direction for a batch of 167 students, ensuring effective communication and collective welfare",
+      "Spearheaded batch unification initiatives to bridge diverse student elements and maintain a cohesive departmental environment",
+    ],
   },
   {
-    name: "Nama Organisasi",
-    position: "Nama Jabatan",
-    period: "2022 - 2023",
-    description:
-      "Deskripsi peran dan kontribusi Anda di organisasi ini akan diisi di sini.",
+    name: "HMDS ITS",
+    position: "Head of Dvil Mania Bureau",
+    period: "Jan 2025 - Dec 2025",
+    description: [
+      "Led the supporter alliance for ITS Manyar Campus, managing all creative strategies, branding, and conceptual ideas for the organization",
+      "Acted as a primary facilitator to foster unity and solidarity among students across the engineering department through high-impact engagement programs",
+    ],
   },
   {
-    name: "Nama Organisasi",
-    position: "Nama Jabatan",
-    period: "2021 - 2022",
-    description:
-      "Deskripsi peran dan kontribusi Anda di organisasi ini akan diisi di sini.",
+    name: "HMDS ITS",
+    position: "IC Coordinator of Orientation Department",
+    period: "Jan 2025 - Dec 2025",
+    description: [
+      "Led the execution of departmental regeneration concepts as outlined in the established \"Grand Design,\" ensuring a structured and effective transition for new members",
+      "Orchestrated the implementation of mentoring and training programs to cultivate core organizational values and competencies within the student association",
+    ],
+  },
+  {
+    name: "Dvillage 13th Edition",
+    position: "Head of Operations",
+    period: "Mar 2024 - Nov 2024",
+    description: [
+      "Directed 4 key operational divisions: Logistics, Decoration, Security Licensing, and Transportation for a major civil engineering event",
+      "Managed end-to-end resource allocation and event logistics, ensuring all departmental requirements and security protocols were met",
+    ],
+  },
+  {
+    name: "HMDS ITS",
+    position: "Personalia",
+    period: "Jan 2024 - Dec 2024",
+    description: [
+      "Conducted periodic performance monitoring and comprehensive evaluations for all members of the Civil Diploma Student Association",
+      "Designed and executed internal training programs and workshops aimed at enhancing staff competencies and talent development",
+    ],
   },
 ];
 

@@ -63,9 +63,17 @@ export function Organizations() {
                     {org.position}
                   </p>
 
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    {org.description}
-                  </p>
+                  <ul className="space-y-1.5">
+                    {org.description.map((desc, j) => (
+                      <li
+                        key={j}
+                        className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed flex items-start gap-2"
+                      >
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400 shrink-0" />
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}
