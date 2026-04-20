@@ -16,9 +16,9 @@ export const profile = {
   phone: "+6287816649287",
   location: "Gresik, East Java, Indonesia",
   social: {
-    linkedin: "https://linkedin.com/in/username",
-    instagram: "https://instagram.com/username",
-    github: "https://github.com/username",
+    linkedin: "https://www.linkedin.com/in/muhammad-naufal-aqila-220a7b394",
+    instagram: "https://www.instagram.com/naufallaqila?igsh=Ym1mY2FwdWV0a29k&utm_source=qr",
+    github: "",
   },
 };
 

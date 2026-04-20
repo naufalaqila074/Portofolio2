@@ -1,7 +1,7 @@
 "use client";
 
 import { Mail, Phone, MapPin } from "lucide-react";
-import { LinkedinIcon, InstagramIcon, GithubIcon } from "@/components/icons";
+import { LinkedinIcon, InstagramIcon } from "@/components/icons";
 import { profile } from "@/lib/data";
 
 export function Footer() {
@@ -12,11 +12,11 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold text-zinc-900 dark:text-white mb-2">
-              {profile.name.split(" ")[0]}
+              Naufal &apos;Aqila
               <span className="text-blue-600 dark:text-blue-400">.</span>
             </h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              {profile.title} &mdash; {profile.tagline}
+              {profile.title}
             </p>
           </div>
 
@@ -77,15 +77,7 @@ export function Footer() {
               >
                 <InstagramIcon width={18} height={18} />
               </a>
-              <a
-                href={profile.social.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 hover:text-zinc-900 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors"
-                aria-label="GitHub"
-              >
-                <GithubIcon width={18} height={18} />
-              </a>
+
             </div>
           </div>
         </div>
