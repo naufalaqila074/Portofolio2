@@ -107,16 +107,27 @@ export function About() {
                 </div>
               </div>
 
-              {/* Technical Skills */}
-              <div className="pt-4">
-                <p className="text-xs text-zinc-500 dark:text-zinc-500 uppercase tracking-wider mb-3">
+            </motion.div>
+          </div>
+
+          {/* Additional Information - Full width below photo+bio grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="mt-12"
+          >
+            <div className="grid md:grid-cols-[1fr_auto] gap-6">
+              {/* Technical Skills Card */}
+              <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700/50">
+                <h4 className="text-sm font-semibold text-zinc-900 dark:text-white uppercase tracking-wider mb-4">
                   Technical Skills
-                </p>
+                </h4>
                 <div className="flex flex-wrap gap-2">
                   {profile.technicalSkills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1.5 text-xs font-medium rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50"
+                      className="px-3 py-1.5 text-sm font-medium rounded-lg bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50"
                     >
                       {skill}
                     </span>
@@ -124,29 +135,26 @@ export function About() {
                 </div>
               </div>
 
-              {/* Languages */}
-              <div className="pt-2">
-                <p className="text-xs text-zinc-500 dark:text-zinc-500 uppercase tracking-wider mb-3">
+              {/* Languages Card */}
+              <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700/50 md:min-w-[280px]">
+                <h4 className="text-sm font-semibold text-zinc-900 dark:text-white uppercase tracking-wider mb-4">
                   Languages
-                </p>
-                <div className="space-y-2">
+                </h4>
+                <div className="space-y-4">
                   {profile.languages.map((lang, i) => (
-                    <div
-                      key={i}
-                      className="flex items-baseline gap-2 text-sm"
-                    >
-                      <span className="font-medium text-zinc-900 dark:text-white">
+                    <div key={i}>
+                      <p className="text-sm font-semibold text-zinc-900 dark:text-white">
                         {lang.name}
-                      </span>
-                      <span className="text-zinc-500 dark:text-zinc-400">
-                        &mdash; {lang.level}
-                      </span>
+                      </p>
+                      <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                        {lang.level}
+                      </p>
                     </div>
                   ))}
                 </div>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
